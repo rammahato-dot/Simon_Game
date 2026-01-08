@@ -1,16 +1,26 @@
 body {
   text-align: center;
+  font-family: Arial, sans-serif;
 }
 
 .btn {
-  height: 200px;
-  width: 200px;
+  height: 150px;
+  width: 150px;
   border-radius: 20%;
-  border: 10px solid black;
-  margin: 2.5rem;
+  border: 6px solid black;
+  margin: 1.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
 .btn-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.line-one,
+.line-two {
   display: flex;
   justify-content: center;
 }
@@ -18,15 +28,29 @@ body {
 .yellow {
   background-color: #fa903b;
 }
-
 .red {
   background-color: #d55075;
 }
-
 .green {
   background-color: #58a0b9;
 }
-
 .purple {
   background-color: #7794f8;
+}
+
+.flash {
+  background-color: white !important;
+}
+
+.red.userFlash {
+  background-color: #ff99aa !important;
+}
+.yellow.userFlash {
+  background-color: #ffd27f !important;
+}
+.green.userFlash {
+  background-color: #9bd6e5 !important;
+}
+.purple.userFlash {
+  background-color: #b3c2ff !important;
 }
